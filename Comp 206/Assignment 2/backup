@@ -1,0 +1,63 @@
+#!/bin/bash
+# Written by Nika Prairie, 260843183
+# Check that the correct number of arguments were passed in
+# if not issue an error message
+if [ ! "$#" -ge 3 ]; then
+   echo "You have the incorrect number of arguments. The correct syntax is: ./backup SWITCH FILES DEST MESSAGE. Please try again."
+   exit 1
+fi
+# By default we don't want to delete the original files, so set the variable
+# DEL to False
+DEL='False'
+
+# if the user passes in the deletion argument, change DEL to True
+# so that later we delete the original.
+# Also, we update the arguments to remove the deletion option
+# so that $1 becomes the files to backup. This makes it easier
+# for the rest of the code not having to decide to use $1 or $2 
+# for the original files
+if [ $1 == '-D' ]; then
+    DEL='True'
+    shift
+fi
+# Set the files to be backed up.
+FILES=$1
+# As I use the arguments, I 'get rid' of them so that it makes
+# it easier to get the message to display
+shift
+# Now get the location of where we want to place the backup
+DEST=$1
+# This is the final argument before the message, so let's
+# get rid of it so that the message essentially becomes
+# all the remaining arguments combined
+shift
+MESSAGE=$*
+
+# If the destination directory does not exist
+# create it
+if [ ! -d "$DEST" ]; then
+   mkdir "$DEST"
+fi
+
+#Create the backup file name which includes today's date
+DEST_FILE=$(date "+backup%d-%m-%y.tar")
+
+# Create the backup
+tar -cf $DEST/$DEST_FILE $FILES
+# Make sure that only the owner is able to read
+# and write the backup file
+chmod 0600 $DEST/$DEST_FILE 
+
+# Create the message we want to add to the backup
+# log so that it includes the date and time
+LOG_MSG=$(date "+%d-%m-%y %H:%M:%S $MESSAGE")
+echo $LOG_MSG>>backups.log
+
+# Oh boy, this is really nerve wracking
+# if the option to delte is chosen delete all
+# the files/directory passed in
+if [ $DEL == 'True' ]; then
+   #echo "Deleting original files!!! $FILES"
+   rm -rf $FILES
+fi
+

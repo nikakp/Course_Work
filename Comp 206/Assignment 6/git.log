@@ -1,0 +1,90 @@
+commit 69ea145e1db1e0ac7d93c2a9a45e3f4f600d5b99
+Author: nikakp <nikakp@gmail.com>
+Date:   Sat Nov 23 12:43:04 2019 -0500
+
+    Updating comments and error handling as well
+
+commit 1ade156dfb2ffbdf1e8e997b399a4f1e496624e5
+Author: Nika <Nika>
+Date:   Sat Nov 23 12:24:39 2019 -0500
+
+    updating comments, and adding some error handling
+
+commit d735a2482acc6ae0a14d0ffa6ac5f91910e49255
+Author: Nika <Nika>
+Date:   Sat Nov 23 12:08:22 2019 -0500
+
+    uploading fleshed out code, still some work to do
+
+commit bcb051c93a8146da97f8bd2cb90c11d2ab860e9b
+Author: nikakp <nikakp@gmail.com>
+Date:   Fri Nov 22 15:00:32 2019 -0500
+
+    filling in implementation of linked.c
+
+commit 8fb706cd03de38494fe0ce24dcf76a0bdb4754ed
+Author: nikakp <nikakp@gmail.com>
+Date:   Thu Nov 21 12:41:57 2019 -0500
+
+    Adding ID to all files
+
+commit 0f706560055cd0081d1abbc54227ba7267719110
+Author: nikakp <nikakp@gmail.com>
+Date:   Wed Nov 20 14:50:54 2019 -0500
+
+    Updating some of the header files
+
+commit 531016e8255f2d8cbd4f3f27bc866ab2a4fce50b
+Author: nikakp <nikakp@gmail.com>
+Date:   Wed Nov 20 07:00:20 2019 -0500
+
+    Adding name and ID to file
+
+commit d63b7d9d54fc8279b7ef817e4d18923f8581e81b
+Author: nikakp <nikakp@gmail.com>
+Date:   Wed Nov 20 06:58:25 2019 -0500
+
+    Adding name and ID to file
+
+commit 5196302303388b19d8f435cf1736daafc1f0a468
+Merge: 87468cd d659694
+Author: nikakp <nikakp@gmail.com>
+Date:   Tue Nov 19 07:31:17 2019 -0500
+
+    Merging CI operation
+
+commit 87468cd793e75033390c9cade85be64ff7998a4a
+Author: nikakp <nikakp@gmail.com>
+Date:   Tue Nov 19 07:28:48 2019 -0500
+
+    Adding a debug helper
+
+commit d6596943d7eed355e350c9067797f37757a34158
+Author: nikakp <57926635+nikakp@users.noreply.github.com>
+Date:   Tue Nov 19 07:27:01 2019 -0500
+
+    Create ccpp.yml
+
+commit dd23e6e6d0f7f758e2c41a8d2dfdcb6477e3f903
+Author: nikakp <nikakp@gmail.com>
+Date:   Tue Nov 19 07:25:40 2019 -0500
+
+    Adding the makefile to the repo
+
+commit 821861bbff5f77686de2c866c8ad0fddda649a5c
+Author: nikakp <nikakp@gmail.com>
+Date:   Tue Nov 19 07:17:30 2019 -0500
+
+    Adding linked and ssv source files
+
+commit b5e8b11372cc83e20a02c40ba2c35ab69c75c22b
+Author: nikakp <nikakp@gmail.com>
+Date:   Mon Nov 18 20:55:20 2019 -0500
+
+    adding my first file to github
+
+commit 6a1b88b325e3c7b093670fa3e4886cf6a1ceef51
+Author: nikakp <57926635+nikakp@users.noreply.github.com>
+Date:   Mon Nov 18 20:40:25 2019 -0500
+
+    Initial commit
