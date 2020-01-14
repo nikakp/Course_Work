@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox maxHeight="800.0" maxWidth="1280.0" minHeight="800.0" minWidth="1280.0" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Graphics">
+  <children>
+    <MenuBar VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem fx:id="quitMenuItem" mnemonicParsing="false" onAction="#handleExitAction" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem fx:id="editNameMenuItem" mnemonicParsing="false" onAction="#handleNameChangeAction" text="Player Name" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem fx:id="aboutMenuItem" mnemonicParsing="false" onAction="#handleAboutAction" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: green;" VBox.vgrow="ALWAYS">
+         <children>
+            <Button fx:id="chip25" layoutX="573.0" layoutY="647.0" mnemonicParsing="false" onAction="#handlechip25" text="25" />
+            <Button fx:id="chip5" layoutX="436.0" layoutY="647.0" mnemonicParsing="false" onAction="#handlechip5" text="5" />
+            <Button fx:id="chip1" layoutX="361.0" layoutY="647.0" mnemonicParsing="false" onAction="#handlechip1" text="1" />
+            <Button fx:id="chip10" layoutX="502.0" layoutY="647.0" mnemonicParsing="false" onAction="#handlechip10" text="10" />
+            <Button fx:id="chip100" layoutX="663.0" layoutY="647.0" mnemonicParsing="false" onAction="#handlechip100" text="100" textAlignment="CENTER" />
+            <Label fx:id="fundsLabel" layoutX="462.0" layoutY="332.0" text="Funds" textFill="#eed709">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="betLabel" layoutX="698.0" layoutY="332.0" text="Bet" textFill="#eed709">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Text layoutX="373.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Funds:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="621.0" layoutY="355.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bet:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Button fx:id="hitButton" layoutX="361.0" layoutY="707.0" mnemonicParsing="false" onAction="#handlehit" text="Hit" />
+            <Button fx:id="standButton" layoutX="432.0" layoutY="707.0" mnemonicParsing="false" onAction="#handlestand" text="Stand" />
+            <Button fx:id="doubleButton" layoutX="518.0" layoutY="707.0" mnemonicParsing="false" onAction="#handleDouble" text="Double" />
+            <Text layoutX="80.0" layoutY="566.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Score:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Label fx:id="hand1ScoreLabel" layoutX="169.0" layoutY="543.0" text="Score" textFill="#eed709">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <ImageView id="dealerCard1" fx:id="dealerImage1" fitHeight="200.0" fitWidth="137.0" layoutX="60.0" layoutY="50.0" preserveRatio="true" scaleX="0.75" scaleY="0.75" />
+            <ImageView fx:id="dealerImage2" fitHeight="200.0" fitWidth="137.0" layoutX="85.0" layoutY="50.0" preserveRatio="true" scaleX="0.75" scaleY="0.75" />
+            <ImageView fx:id="dealerImage3" fitHeight="200.0" fitWidth="137.0" layoutX="110.0" layoutY="50.0" preserveRatio="true" scaleX="0.75" scaleY="0.75" />
+            <ImageView fx:id="dealerImage4" fitHeight="200.0" fitWidth="137.0" layoutX="135.0" layoutY="50.0" preserveRatio="true" scaleX="0.75" scaleY="0.75" />
+            <ImageView fx:id="dealerImage5" fitHeight="200.0" fitWidth="137.0" layoutX="160.0" layoutY="50.0" preserveRatio="true" scaleX="0.75" scaleY="0.75" />
+            <ImageView fx:id="dealerImage6" fitHeight="200.0" fitWidth="137.0" layoutX="185.0" layoutY="50.0" preserveRatio="true" scaleX="0.75" scaleY="0.75" />
+            <ImageView fx:id="dealerImage7" fitHeight="200.0" fitWidth="137.0" layoutX="210.0" layoutY="50.0" preserveRatio="true" scaleX="0.75" scaleY="0.75" />
+            <ImageView fx:id="dealerImage8" fitHeight="200.0" fitWidth="137.0" layoutX="235.0" layoutY="50.0" preserveRatio="true" scaleX="0.75" scaleY="0.75" />
+            <ImageView fx:id="dealerImage9" fitHeight="200.0" fitWidth="137.0" layoutX="260.0" layoutY="50.0" preserveRatio="true" scaleX="0.75" scaleY="0.75" />
+            <ImageView fx:id="dealerImage10" fitHeight="200.0" fitWidth="137.0" layoutX="285.0" layoutY="50.0" preserveRatio="true" scaleX="0.75" scaleY="0.75" />
+            <ImageView fx:id="dealerImage11" fitHeight="200.0" fitWidth="137.0" layoutX="310.0" layoutY="50.0" preserveRatio="true" scaleX="0.75" scaleY="0.75" />
+            <ImageView id="dealerCard1" fx:id="playerhand1Image1" disable="true" fitHeight="200.0" fitWidth="137.0" layoutX="63.0" layoutY="353.0" preserveRatio="true" scaleX="0.75" scaleY="0.75" />
+            <ImageView fx:id="playerhand1Image2" disable="true" fitHeight="200.0" fitWidth="137.0" layoutX="88.0" layoutY="353.0" preserveRatio="true" scaleX="0.75" scaleY="0.75" />
+            <ImageView fx:id="playerhand1Image3" disable="true" fitHeight="200.0" fitWidth="137.0" layoutX="113.0" layoutY="353.0" preserveRatio="true" scaleX="0.75" scaleY="0.75" />
+            <ImageView fx:id="playerhand1Image4" disable="true" fitHeight="200.0" fitWidth="137.0" layoutX="138.0" layoutY="353.0" preserveRatio="true" scaleX="0.75" scaleY="0.75" />
+            <ImageView fx:id="playerhand1Image5" disable="true" fitHeight="200.0" fitWidth="137.0" layoutX="163.0" layoutY="353.0" preserveRatio="true" scaleX="0.75" scaleY="0.75" />
+            <ImageView fx:id="playerhand1Image6" disable="true" fitHeight="200.0" fitWidth="137.0" layoutX="188.0" layoutY="353.0" preserveRatio="true" scaleX="0.75" scaleY="0.75" />
+            <ImageView fx:id="playerhand1Image7" disable="true" fitHeight="200.0" fitWidth="137.0" layoutX="213.0" layoutY="353.0" preserveRatio="true" scaleX="0.75" scaleY="0.75" />
+            <ImageView fx:id="playerhand1Image8" disable="true" fitHeight="200.0" fitWidth="137.0" layoutX="238.0" layoutY="353.0" preserveRatio="true" scaleX="0.75" scaleY="0.75" />
+            <ImageView fx:id="playerhand1Image9" disable="true" fitHeight="200.0" fitWidth="137.0" layoutX="263.0" layoutY="353.0" preserveRatio="true" scaleX="0.75" scaleY="0.75" />
+            <ImageView fx:id="playerhand1Image10" disable="true" fitHeight="200.0" fitWidth="137.0" layoutX="288.0" layoutY="353.0" preserveRatio="true" scaleX="0.75" scaleY="0.75" />
+            <ImageView fx:id="playerhand1Image11" disable="true" fitHeight="200.0" fitWidth="137.0" layoutX="313.0" layoutY="353.0" preserveRatio="true" scaleX="0.75" scaleY="0.75" />
+            <Text layoutX="78.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Score:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Label fx:id="dealerScoreLabel" layoutX="167.0" layoutY="247.0" text="Score" textFill="#eed709">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Text layoutX="69.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dealer">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text layoutX="79.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Player:">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Label fx:id="nameLabel" layoutX="168.0" layoutY="333.0" text="James Bond" textFill="#eed709">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Text layoutX="210.0" layoutY="609.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1st Hand">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Button fx:id="dealCardsButton" layoutX="204.0" layoutY="674.0" mnemonicParsing="false" onAction="#handleDealCards" text="Deal Cards" />
+            <Button fx:id="surrenderButton" layoutX="607.0" layoutY="707.0" mnemonicParsing="false" onAction="#handleSurrender" text="Surrender" />
+            <AnchorPane fx:id="winLoosePane" layoutX="340.0" layoutY="188.0" prefHeight="290.0" prefWidth="476.0" style="-fx-background-color: dodgerblue;">
+               <children>
+                  <Button fx:id="yesButton" layoutX="136.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleYes" text="Yes" />
+                  <Button fx:id="noButton" layoutX="299.0" layoutY="227.0" mnemonicParsing="false" onAction="#handleNo" text="No" />
+                  <Text fx:id="looseText" layoutX="80.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You lost, play again?">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="drawText" layoutX="13.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have drawn, play again?" textAlignment="CENTER">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="winText" layoutX="80.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You won, play again?">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Text>
+               </children>
+               <effect>
+                  <DropShadow blurType="GAUSSIAN" />
+               </effect>
+            </AnchorPane>
+            <Text layoutX="886.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dealer Draws to 17">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Text layoutX="890.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pays 3 to 2">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <Text layoutX="898.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Insurance 2 to 1">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+  </children>
+</VBox>
